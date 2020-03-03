@@ -11,9 +11,17 @@ img{max-width: 100%;}
 body,html{font-family: 'Poppins',sans-serif;font-size: 10px;}
 .container{max-width: 1470px;}
 
+/* Title */
+.block-title{font-size: 5rem;color: #1A1919;font-weight: bold;text-align: center;margin-bottom: 50px;}
+
 /* Button */
 .btn{font-size: 1.8rem;color: #FFFEFE;font-weight: 500;padding: 5px 15px;min-width: 120px;background: #71505F;border-radius: 4px;border: none;}
 .btn:hover{background: #1C528A;}
+.btn-secondary{background: #86D8D8;}
+.btn-lg{padding: 12px 30px;}
+
+/* card */
+.card{background: #FFFFFF;box-shadow: 0 52px 66px 0 rgba(0,0,0,0.05);border-radius: 4px;padding: 30px;border: none;}
 
 /* Header */
 .navbar{padding: 24px 0;}
@@ -25,8 +33,9 @@ body,html{font-family: 'Poppins',sans-serif;font-size: 10px;}
 .banner .container{position: relative;z-index: 2;}
 .banner .banner-semi-text{font-size: 4.9rem;color: #A84E4D;font-weight: bold;}
 .banner .banner-text{font-size: 10.5rem;color: #1A1919;font-weight: bold;}
-.banner-img{position: absolute;bottom: 0;right: 0;left: 0;z-index: 1;}
-.banner-img svg{width: 100%;}
+.banner-img{position: absolute;bottom: 0;right: 0;z-index: 1;width: 100%;text-align: right;}
+.banner-planet .banner-img{padding-right: 110px;}
+/* .banner-img svg{width: 100%;} */
 .banner-round1 {position: absolute;top: 0;left: 0;z-index: 1;}
 .banner-round2 {position: absolute;bottom: 82px;left: 45px;z-index: 1;}
 
@@ -71,6 +80,40 @@ body,html{font-family: 'Poppins',sans-serif;font-size: 10px;}
      transform: translateX(0);
   }
 } 
+
+@keyframes roted {
+  0% {
+     opacity: 1;
+     transform: rotate(1deg);
+  }
+  100% {
+     opacity: 1;
+     transform: rotate(0);
+  }
+} 
+
+@keyframes moveTop {
+  0% {
+     opacity: 1;
+     transform: translateY(20px);
+  }
+  100% {
+     opacity: 1;
+     transform: translateY(0);
+  }
+} 
+
+@keyframes moveBottom {
+  0% {
+     opacity: 1;
+     transform: translateY(-20px);
+  }
+  100% {
+     opacity: 1;
+     transform: translateY(0);
+  }
+} 
+
 @keyframes swing {
   0% {
      transform: translate(5px , 5px);
@@ -89,28 +132,216 @@ body,html{font-family: 'Poppins',sans-serif;font-size: 10px;}
     transform: scale(1.1);
   }
 } 
+@keyframes skew {
+  0% {
+    transform: skewX(10deg);
+  }
+  100% {
+    transform: skewX(0deg);
+  }
+}
+
+@keyframes rotedRound {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
 
 /* Banner animations */
 #Fill-315,#Fill-314,#Fill-343,#Fill-375,#Fill-319,#Fill-320,#Fill-316,#Fill-249,#Fill-30,#Fill-31{
-	-webkit-animation: FadeIn 5s infinite; /* Safari 4+ */
-  -moz-animation:FadeIn 5s infinite; /* Fx 5+ */
-  -o-animation: FadeIn 5s infinite; /* Opera 12+ */
-  animation:FadeIn 5s infinite; /* IE 10+, Fx 29+ */
+	-webkit-animation: FadeIn 3s infinite alternate; /* Safari 4+ */
+  -moz-animation:FadeIn 3s infinite alternate; /* Fx 5+ */
+  -o-animation: FadeIn 3s infinite alternate; /* Opera 12+ */
+  animation:FadeIn 3s infinite alternate; /* IE 10+, Fx 29+ */
 }
 
 #Fill-312,#Fill-311,#Fill-310,#Fill-309,#Fill-308{
-  -webkit-animation: moveRight 3s ; /* Safari 4+ */
-  -moz-animation:moveRight 3s ; /* Fx 5+ */
-  -o-animation: moveRight 3s ; /* Opera 12+ */
-  animation:moveRight 3s ; /* IE 10+, Fx 29+ */
+  -webkit-animation: moveRight 3s infinite alternate; /* Safari 4+ */
+  -moz-animation:moveRight 3s infinite alternate; /* Fx 5+ */
+  -o-animation: moveRight 3s infinite alternate; /* Opera 12+ */
+  animation:moveRight 3s infinite alternate; /* IE 10+, Fx 29+ */
 }
 #Fill-303,#Fill-304,#Fill-305,#Fill-306,#Fill-307{
-  -webkit-animation: moveLeft 3s ; /* Safari 4+ */
-  -moz-animation:moveLeft 3s ; /* Fx 5+ */
-  -o-animation: moveLeft 3s ; /* Opera 12+ */
-  animation:moveLeft 3s ; /* IE 10+, Fx 29+ */
+  -webkit-animation: moveLeft 3s infinite alternate; /* Safari 4+ */
+  -moz-animation:moveLeft 3s infinite alternate; /* Fx 5+ */
+  -o-animation: moveLeft 3s infinite alternate; /* Opera 12+ */
+  animation:moveLeft 3s infinite alternate; /* IE 10+, Fx 29+ */
 }
 
+#Fill-250,#Fill-245,#Fill-244,#Fill-247,#Fill-246,#Fill-248,#Fill-249 {
+  
+  -webkit-animation: moveLeft 3s infinite alternate; /* Safari 4+ */
+  -moz-animation:moveLeft 3s infinite alternate; /* Fx 5+ */
+  -o-animation: moveLeft 3s infinite alternate; /* Opera 12+ */
+  animation:moveLeft 3s infinite alternate; /* IE 10+, Fx 29+ */
+}
+#Group-5 path{
+  -webkit-animation: moveTop 3s infinite alternate; /* Safari 4+ */
+  -moz-animation:moveTop 3s infinite alternate; /* Fx 5+ */
+  -o-animation: moveTop 3s infinite alternate; /* Opera 12+ */
+  animation:moveTop 3s infinite alternate; /* IE 10+, Fx 29+ */
+}
+
+#group_01 path , #group_01 polygon, #group_01 polyline{
+  -webkit-animation: moveBottom 3s infinite alternate; /* Safari 4+ */
+  -moz-animation:moveBottom 3s infinite alternate; /* Fx 5+ */
+  -o-animation: moveBottom 3s infinite alternate; /* Opera 12+ */
+  animation:moveBottom 3s infinite alternate; /* IE 10+, Fx 29+ */
+}
+
+#group_02 path , #group_02 polygon, #group_02 polyline{
+  -webkit-animation: roted 3s infinite alternate; /* Safari 4+ */
+  -moz-animation:roted 3s infinite alternate; /* Fx 5+ */
+  -o-animation: roted 3s infinite alternate; /* Opera 12+ */
+  animation:roted 3s infinite alternate; /* IE 10+, Fx 29+ */
+}
+
+#group_03 path , #group_03 polygon{
+  -webkit-animation: moveLeft 3s infinite alternate; /* Safari 4+ */
+  -moz-animation:moveLeft 3s infinite alternate; /* Fx 5+ */
+  -o-animation: moveLeft 3s infinite alternate; /* Opera 12+ */
+  animation:moveLeft 3s infinite alternate; /* IE 10+, Fx 29+ */
+}
+
+#group_04 path , #group_04 polygon{
+  -webkit-animation: moveRight 3s infinite alternate; /* Safari 4+ */
+  -moz-animation:moveRight 3s infinite alternate; /* Fx 5+ */
+  -o-animation: moveRight 3s infinite alternate; /* Opera 12+ */
+  animation:moveRight 3s infinite alternate; /* IE 10+, Fx 29+ */
+}
+
+#group_05 path , #group_05 polygon{
+  -webkit-animation: moveRight 3s infinite alternate; /* Safari 4+ */
+  -moz-animation:moveRight 3s infinite alternate; /* Fx 5+ */
+  -o-animation: moveRight 3s infinite alternate; /* Opera 12+ */
+  animation:moveRight 3s infinite alternate; /* IE 10+, Fx 29+ */
+}
+
+#group_06 path , #group_06 polygon{
+  -webkit-animation: moveTop 3s infinite alternate; /* Safari 4+ */
+  -moz-animation:moveTop 3s infinite alternate; /* Fx 5+ */
+  -o-animation: moveTop 3s infinite alternate; /* Opera 12+ */
+  animation:moveTop 3s infinite alternate; /* IE 10+, Fx 29+ */
+}
+
+#group_07 path , #group_07 polygon{
+  -webkit-animation: moveLeft 3s infinite alternate; /* Safari 4+ */
+  -moz-animation:moveLeft 3s infinite alternate; /* Fx 5+ */
+  -o-animation: moveLeft 3s infinite alternate; /* Opera 12+ */
+  animation:moveLeft 3s infinite alternate; /* IE 10+, Fx 29+ */
+}
+
+#group_08 path , #group_08 polygon{
+  -webkit-animation: moveRight 3s infinite alternate; /* Safari 4+ */
+  -moz-animation:moveRight 3s infinite alternate; /* Fx 5+ */
+  -o-animation: moveRight 3s infinite alternate; /* Opera 12+ */
+  animation:moveRight 3s infinite alternate; /* IE 10+, Fx 29+ */
+}
+
+#group_09 path , #group_09 polygon{
+  -webkit-animation: roted 3s infinite alternate; /* Safari 4+ */
+  -moz-animation:roted 3s infinite alternate; /* Fx 5+ */
+  -o-animation: roted 3s infinite alternate; /* Opera 12+ */
+  animation:roted 3s infinite alternate; /* IE 10+, Fx 29+ */
+}
+
+#group_10 path , #group_10 polygon{
+  -webkit-animation: moveTop 3s infinite alternate; /* Safari 4+ */
+  -moz-animation:moveTop 3s infinite alternate; /* Fx 5+ */
+  -o-animation: moveTop 3s infinite alternate; /* Opera 12+ */
+  animation:moveTop 3s infinite alternate; /* IE 10+, Fx 29+ */
+}
+
+#group_11 path , #group_11 polygon{
+  -webkit-animation: moveLeft 3s infinite alternate; /* Safari 4+ */
+  -moz-animation:moveLeft 3s infinite alternate; /* Fx 5+ */
+  -o-animation: moveLeft 3s infinite alternate; /* Opera 12+ */
+  animation:moveLeft 3s infinite alternate; /* IE 10+, Fx 29+ */
+}
+#group_12 path , #group_12 polygon{
+  -webkit-animation: moveRight 3s infinite alternate; /* Safari 4+ */
+  -moz-animation:moveRight 3s infinite alternate; /* Fx 5+ */
+  -o-animation: moveRight 3s infinite alternate; /* Opera 12+ */
+  animation:moveRight 3s infinite alternate; /* IE 10+, Fx 29+ */
+}
+
+#group_13 path , #group_13 polygon{
+  -webkit-animation: moveBottom 3s infinite alternate; /* Safari 4+ */
+  -moz-animation:moveBottom 3s infinite alternate; /* Fx 5+ */
+  -o-animation: moveBottom 3s infinite alternate; /* Opera 12+ */
+  animation:moveBottom 3s infinite alternate; /* IE 10+, Fx 29+ */
+}
+
+#group_14 path , #group_14 polygon{
+  -webkit-animation: moveLeft 3s infinite alternate; /* Safari 4+ */
+  -moz-animation:moveLeft 3s infinite alternate; /* Fx 5+ */
+  -o-animation: moveLeft 3s infinite alternate; /* Opera 12+ */
+  animation:moveLeft 3s infinite alternate; /* IE 10+, Fx 29+ */
+}
+
+#group_15 path , #group_15 polygon, #group_15 polyline{
+  -webkit-animation: moveRight 3s infinite alternate; /* Safari 4+ */
+  -moz-animation:moveRight 3s infinite alternate; /* Fx 5+ */
+  -o-animation: moveRight 3s infinite alternate; /* Opera 12+ */
+  animation:moveRight 3s infinite alternate; /* IE 10+, Fx 29+ */
+}
+#group_16 path , #group_16 polygon, #group_16 polyline{
+  -webkit-animation: moveLeft 3s infinite alternate; /* Safari 4+ */
+  -moz-animation:moveLeft 3s infinite alternate; /* Fx 5+ */
+  -o-animation: moveLeft 3s infinite alternate; /* Opera 12+ */
+  animation:moveLeft 3s infinite alternate; /* IE 10+, Fx 29+ */
+}
+#group_17 path , #group_17 polygon, #group_17 polyline{
+  -webkit-animation: moveRight 3s infinite alternate; /* Safari 4+ */
+  -moz-animation:moveRight 3s infinite alternate; /* Fx 5+ */
+  -o-animation: moveRight 3s infinite alternate; /* Opera 12+ */
+  animation:moveRight 3s infinite alternate; /* IE 10+, Fx 29+ */
+}
+
+#group_18 path , #group_18 polygon, #group_18 polyline{
+  -webkit-animation: moveRight 3s infinite alternate; /* Safari 4+ */
+  -moz-animation:moveRight 3s infinite alternate; /* Fx 5+ */
+  -o-animation: moveRight 3s infinite alternate; /* Opera 12+ */
+  animation:moveRight 3s infinite alternate; /* IE 10+, Fx 29+ */
+}
+
+#group_19 path , #group_19 polygon, #group_19 polyline{
+  -webkit-animation: roted 3s infinite alternate; /* Safari 4+ */
+  -moz-animation:roted 3s infinite alternate; /* Fx 5+ */
+  -o-animation: roted 3s infinite alternate; /* Opera 12+ */
+  animation:roted 3s infinite alternate; /* IE 10+, Fx 29+ */
+}
+
+#group_20 path , #group_20 polygon, #group_20 polyline{
+  -webkit-animation: moveBottom 3s infinite alternate; /* Safari 4+ */
+  -moz-animation:moveBottom 3s infinite alternate; /* Fx 5+ */
+  -o-animation: moveBottom 3s infinite alternate; /* Opera 12+ */
+  animation:moveBottom 3s infinite alternate; /* IE 10+, Fx 29+ */
+}
+
+#group_21 path , #group_21 polygon, #group_21 polyline{
+  -webkit-animation: moveTop 3s infinite alternate; /* Safari 4+ */
+  -moz-animation:moveTop 3s infinite alternate; /* Fx 5+ */
+  -o-animation: moveTop 3s infinite alternate; /* Opera 12+ */
+  animation:moveTop 3s infinite alternate; /* IE 10+, Fx 29+ */
+}
+
+#group_22 path , #group_22 polygon, #group_22 polyline{
+  -webkit-animation: moveRight 3s infinite alternate; /* Safari 4+ */
+  -moz-animation:moveRight 3s infinite alternate; /* Fx 5+ */
+  -o-animation: moveRight 3s infinite alternate; /* Opera 12+ */
+  animation:moveRight 3s infinite alternate; /* IE 10+, Fx 29+ */
+}
+
+#Fill-322,#Fill-340,#Fill-332{
+  -webkit-animation: fadeIn 3s infinite alternate; /* Safari 4+ */
+  -moz-animation:fadeIn 3s infinite alternate; /* Fx 5+ */
+  -o-animation: fadeIn 3s infinite alternate; /* Opera 12+ */
+  animation:fadeIn 3s infinite alternate; /* IE 10+, Fx 29+ */
+}
 /* #Fill-159,#Fill-160{} */
 
 
@@ -132,3 +363,29 @@ body,html{font-family: 'Poppins',sans-serif;font-size: 10px;}
 /* .vector-1{position: absolute;top: -322px;} */
 .countries-block .vector{display: flex;}
 .vector-2{margin-top: 76px;}
+
+
+/* volunteers-block */
+.volunteers-block{padding-bottom: 100px;}
+.volunteers-img{width: 98px;height: 98px;border-radius: 50%;overflow: hidden;margin-right: 30px;}
+.volunteers-img img{width: 100%;height: 100%;object-fit: cover;}
+.volunteers-details {display: flex;align-items: center;margin-bottom: 30px;}
+.volunteers-info h4{font-size: 2.1rem;color: #1C528A;font-weight: 500;margin-bottom: 12px;}
+.volunteers-info p{font-size: 1.4rem;color: #565555;line-height: 20px;font-weight: 500;}
+.volunteers-info p span{display: block;}
+.volunteers-discription{margin-bottom: 30px;padding-left: 22px;position: relative;}
+.volunteers-discription::after{position: absolute;content: "“";font-size: 24.13px;color: #324148;line-height: 42.9px;top: 0;left: 0;}
+.volunteers-discription p{font-weight: 500;font-size: 1.8rem;color: #342D2D;line-height: 30px;}
+.volunteers-slider .card{margin: 15px;margin-bottom: 30px;}
+.volunteers-slider .owl-nav{justify-content: flex-end;display: flex;}
+.volunteers-slider .owl-carousel .owl-nav button.owl-prev, .volunteers-slider .owl-carousel .owl-nav button.owl-next{font-size: 0;width: 24px;height: 24px;background-image: url('../images/next-arrow.svg');background-repeat: no-repeat;background-position: center;}
+.volunteers-slider .owl-carousel .owl-nav button.owl-prev{transform: rotate(180deg);margin-right: 10px;}
+.volunteers-slider .owl-theme .owl-nav [class*='owl-']:hover{background-color: transparent;}
+
+
+/* roadmap-slider */
+.roadmap-block{padding: 70px 0;background: rgba(0, 177, 255, 0.05);}
+.slider-data{width: 300px;padding: 30px;}
+.slider-data h5{font-size: 2.1rem;color: #252222;line-height: 30px;font-weight: bold;}
+.slider-data p{font-size: 1.6rem;color: #342D2D;line-height: 24px;}
+.roadmap-slider .owl-item.active.center .slider-data{background: rgba(255, 255, 255, 0.9);box-shadow: 0 30px 62px 0 rgba(0,177,255,0.12);}

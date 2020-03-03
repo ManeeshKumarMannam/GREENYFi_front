@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="17px" viewBox="0 0 16 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1" transform="translate(-1517.000000, -2937.000000)" fill="#171717" fill-rule="nonzero">
+            <g id="Group-15" transform="translate(396.000000, 2496.000000)">
+                <g id="Group-8">
+                    <g id="arrow-down" transform="translate(1129.000000, 449.353041) rotate(-90.000000) translate(-1129.000000, -449.353041) translate(1117.000000, 437.353041)">
+                        <polygon id="Path" points="20 12 18.59 10.59 13 16.17 13 4 11 4 11 16.17 5.42 10.58 4 12 12 20"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
