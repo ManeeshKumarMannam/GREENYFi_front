@@ -1,0 +1,134 @@
+
+/* =Toolkit--------------------------------------------------------------------------------------------------*/
+/* general purpose classes */
+ul,li, ol { margin: 0; padding: 0; list-style-type: none }
+button:focus{outline: none;}
+h1,h2,h3,h4,h5,h6,p{margin-bottom: 0;}
+img{max-width: 100%;}
+
+/* Common style */
+
+body,html{font-family: 'Poppins',sans-serif;font-size: 10px;}
+.container{max-width: 1470px;}
+
+/* Button */
+.btn{font-size: 1.8rem;color: #FFFEFE;font-weight: 500;padding: 5px 15px;min-width: 120px;background: #71505F;border-radius: 4px;border: none;}
+.btn:hover{background: #1C528A;}
+
+/* Header */
+.navbar{padding: 24px 0;}
+.navbar .btn{margin-left: 18px;}
+.navbar-light .navbar-nav .nav-link{padding: 10px 18px;font-weight: 500;font-size: 18px;color: #A84E4D;}
+
+/* Home banner */
+.banner{position: relative;padding-top: 250px;padding-bottom: 310px;}
+.banner .container{position: relative;z-index: 2;}
+.banner .banner-semi-text{font-size: 4.9rem;color: #A84E4D;font-weight: bold;}
+.banner .banner-text{font-size: 10.5rem;color: #1A1919;font-weight: bold;}
+.banner-img{position: absolute;bottom: 0;right: 0;left: 0;z-index: 1;}
+.banner-img svg{width: 100%;}
+.banner-round1 {position: absolute;top: 0;left: 0;z-index: 1;}
+.banner-round2 {position: absolute;bottom: 82px;left: 45px;z-index: 1;}
+
+
+/* Custom animations */
+
+@-webkit-keyframes FadeIn {
+	0%   { opacity: 0; }
+	100% { opacity: 1; }
+  }
+  @-moz-keyframes FadeIn {
+	0%   { opacity: 0; }
+	100% { opacity: 1; }
+  }
+  @-o-keyframes FadeIn {
+	0%   { opacity: 0; }
+	100% { opacity: 1; }
+  }
+  @keyframes FadeIn {
+	0%   { opacity: 0; }
+	100% { opacity: 1; }
+  }
+
+  @keyframes moveRight {
+    0% {
+       opacity: 1;
+       transform: translateX(20px);
+    }
+    100% {
+       opacity: 1;
+       transform: translateX(0);
+    }
+ } 
+
+ @keyframes moveLeft {
+  0% {
+     opacity: 1;
+     transform: translateX(-20px);
+  }
+  100% {
+     opacity: 1;
+     transform: translateX(0);
+  }
+} 
+@keyframes swing {
+  0% {
+     transform: translate(5px , 5px);
+  }
+  100% {
+     transform: translate(0 , 0);
+  }
+} 
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+} 
+
+/* Banner animations */
+#Fill-315,#Fill-314,#Fill-343,#Fill-375,#Fill-319,#Fill-320,#Fill-316,#Fill-249,#Fill-30,#Fill-31{
+	-webkit-animation: FadeIn 5s infinite; /* Safari 4+ */
+  -moz-animation:FadeIn 5s infinite; /* Fx 5+ */
+  -o-animation: FadeIn 5s infinite; /* Opera 12+ */
+  animation:FadeIn 5s infinite; /* IE 10+, Fx 29+ */
+}
+
+#Fill-312,#Fill-311,#Fill-310,#Fill-309,#Fill-308{
+  -webkit-animation: moveRight 3s ; /* Safari 4+ */
+  -moz-animation:moveRight 3s ; /* Fx 5+ */
+  -o-animation: moveRight 3s ; /* Opera 12+ */
+  animation:moveRight 3s ; /* IE 10+, Fx 29+ */
+}
+#Fill-303,#Fill-304,#Fill-305,#Fill-306,#Fill-307{
+  -webkit-animation: moveLeft 3s ; /* Safari 4+ */
+  -moz-animation:moveLeft 3s ; /* Fx 5+ */
+  -o-animation: moveLeft 3s ; /* Opera 12+ */
+  animation:moveLeft 3s ; /* IE 10+, Fx 29+ */
+}
+
+/* #Fill-159,#Fill-160{} */
+
+
+/* company-block */
+.company-block{padding: 100px 160px;}
+.company-text-outer{max-width: 540px;margin: 0 auto;margin-bottom: 100px;}
+.company-text-outer h3{font-weight: bold;font-size: 3.6rem;color: #1C1D1F;text-align: center;margin-bottom:2.4rem;line-height: 5.5rem;}
+.company-text-outer p{font-weight: 500;font-size: 2.1rem;color: #1C1D1F;}
+/* .slider-img{padding: 0 40px;} */
+.company-block .owl-carousel .owl-item img{width: auto;margin: 0 auto;}
+
+/* countries-block */
+.countries-block{margin: 120px 0;position: relative;}
+.countries-inner{background: rgba(168, 78, 77, 0.1);position: absolute;left: 0;right: 0;top: 120px;}
+.countries-text h2{font-size: 10.5rem;color: #1A1919;font-weight: bold;}
+.countries-text p{font-size: 5.0rem;color: #A84E4D;font-weight: bold;line-height: 6.9rem;}
+.countries-vector{position: relative;}
+.countries-text{padding: 203px 0;}
+/* .vector-1{position: absolute;top: -322px;} */
+.countries-block .vector{display: flex;}
+.vector-2{margin-top: 76px;}

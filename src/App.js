@@ -1,10 +1,15 @@
 import React, { Component } from 'react';
 import { Provider } from 'react-redux';
-import { store, persistor } from './store';
+import { store, persistor } from '../src/redux/store';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import './App.css';
-import Login from './Login'
-import HomePage from './Homepage'
+// import './App.css';
+
+import '../src/assets/css/style.css';
+import '../src/assets/css/responsive.css';
+
+
+import Login from '../src/pages/Login'
+import HomePage from '../src/pages/Homepage'
 
 class App extends Component {
 
