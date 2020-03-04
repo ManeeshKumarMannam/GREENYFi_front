@@ -3,7 +3,7 @@ import { withRouter, Link, NavLink } from "react-router-dom";
 import { Navbar, Nav, Form ,Button} from "react-bootstrap";
 import logo from '../assets/images/logo.svg'
 
-const Header = () => {
+const Header = (props) => {
 
     return (
         <React.Fragment>
@@ -21,7 +21,7 @@ const Header = () => {
                                 <Nav.Link href="#link">PUBLISH EVENT</Nav.Link>
                                 <Nav.Link href="#link">DONATE</Nav.Link>
                             </Nav>
-                            <Button>Login</Button>
+                            <Button onClick={()=>props.history.push('/login')}>Login</Button>
                         </Navbar.Collapse>
                     </Navbar>
                 </div>                
