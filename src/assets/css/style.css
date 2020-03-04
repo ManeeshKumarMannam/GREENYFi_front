@@ -10,6 +10,7 @@ img{max-width: 100%;}
 
 body,html{font-family: 'Poppins',sans-serif;font-size: 10px;}
 .container{max-width: 1470px;}
+.planet-part{display: none;}
 
 /* Title */
 .block-title{font-size: 5rem;color: #1A1919;font-weight: bold;text-align: center;margin-bottom: 50px;}
@@ -27,6 +28,7 @@ body,html{font-family: 'Poppins',sans-serif;font-size: 10px;}
 .navbar{padding: 24px 0;}
 .navbar .btn{margin-left: 18px;}
 .navbar-light .navbar-nav .nav-link{padding: 10px 18px;font-weight: 500;font-size: 18px;color: #A84E4D;}
+.logo-planet{display: none;}
 
 /* Home banner */
 .banner{position: relative;padding-top: 250px;padding-bottom: 310px;}
@@ -35,7 +37,8 @@ body,html{font-family: 'Poppins',sans-serif;font-size: 10px;}
 .banner .banner-text{font-size: 10.5rem;color: #1A1919;font-weight: bold;}
 .banner-img{position: absolute;bottom: 0;right: 0;z-index: 1;width: 100%;text-align: right;}
 .banner-planet .banner-img{padding-right: 110px;}
-/* .banner-img svg{width: 100%;} */
+.banner-img svg{width: 100%;}
+.banner-planet .banner-img svg{width: 50%;}
 .banner-round1 {position: absolute;top: 0;left: 0;z-index: 1;}
 .banner-round2 {position: absolute;bottom: 82px;left: 45px;z-index: 1;}
 
@@ -389,3 +392,31 @@ body,html{font-family: 'Poppins',sans-serif;font-size: 10px;}
 .slider-data h5{font-size: 2.1rem;color: #252222;line-height: 30px;font-weight: bold;}
 .slider-data p{font-size: 1.6rem;color: #342D2D;line-height: 24px;}
 .roadmap-slider .owl-item.active.center .slider-data{background: rgba(255, 255, 255, 0.9);box-shadow: 0 30px 62px 0 rgba(0,177,255,0.12);}
+
+
+
+
+
+
+/* planet-theme */
+
+/* Common */
+.planet-theme .planet-part{display: block;}
+.planet-theme .animal-part{display: none;}
+
+
+/* Header  */
+.planet-theme .navbar-light .navbar-nav .nav-link{color: #029263;}
+.planet-theme .btn{background:#029263;}
+
+/* Banner */
+.planet-theme .banner .banner-semi-text{color: #029263;}
+
+/* countries-block */
+.planet-theme .countries-inner{background: rgba(0, 109, 78, 0.1);}
+.planet-theme .countries-text p{color: #029263;}
+
+/* .roadmap-block */
+.planet-theme .roadmap-block{background: rgba(0, 109, 78, 0.05);}
+.planet-theme .logo-planet{display: block;}
+.planet-theme .logo-animal{display: none;}

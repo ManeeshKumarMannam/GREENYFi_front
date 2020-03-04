@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="983px" height="754px" viewBox="0 0 983 754" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 23</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="2" transform="translate(-817.000000, -1467.000000)">
+            <g id="Group-23" transform="translate(817.000000, 1467.000000)">
+                <g id="b-l" transform="translate(886.000000, 654.000000)" fill-rule="nonzero">
+                    <path d="M97,97 C43.42787,97 0,53.57116 0,0 L97,0 L97,97 Z" id="Shape" fill="#2D3652"></path>
+                    <path d="M97,49 C69.9375882,49 48,27.0624118 48,0 L97,0 L97,49 Z" id="Shape" fill="#6ED47C"></path>
+                </g>
+                <path d="M302,169 C227.99448,169 168,109.00552 168,35 L302,35 L302,169 Z" id="Shapf" fill="#FFFFFF" fill-rule="nonzero" transform="translate(235.000000, 102.000000) scale(-1, -1) rotate(-180.000000) translate(-235.000000, -102.000000) "></path>
+                <rect id="Rectangle-Copy-2" fill="#FFFFFF" x="455" y="665" width="97" height="89"></rect>
+                <g id="l-f" transform="translate(825.000000, 0.000000)" fill-rule="nonzero">
+                    <path d="M119,0 L119,59.5 C119,92.36066 92.13704,119 59,119 L59,59.5 C59,26.63934 85.86296,0 119,0 Z" id="Shape" fill="#D5E155"></path>
+                    <path d="M59,60 L59,119.5 C59,152.36066 32.5847615,179 0,179 L2.57897207e-06,119.5 C4.00329077e-06,86.63934 26.4152507,60 59,60 Z" id="Shape" fill="#6ED47C"></path>
+                    <path d="M103,149.5 C103,159.164667 95.1650167,167 85.5,167 C75.8349833,167 68,159.164667 68,149.5 C68,139.835333 75.8349833,132 85.5,132 C95.1650167,132 103,139.835333 103,149.5 Z" id="Shape" fill="#6ED47C"></path>
+                    <path d="M14,30 C14,21.1632593 20.939637,14 29.5,14 C38.060363,14 45,21.1632593 45,30 C45,38.8367407 38.060363,46 29.5,46 C20.939637,46 14,38.8367407 14,30 Z" id="Shape" fill="#FF743C"></path>
+                </g>
+                <path d="M693,101 C693,125.8526 672.8526,146 648,146 C623.1474,146 603,125.8526 603,101 C603,76.1474 623.1474,56 648,56 L693,56 L693,101 Z" id="L-g" fill="#D5E155" fill-rule="nonzero"></path>
+                <g id="Group-10" transform="translate(0.000000, 47.000000)">
+                    <rect id="Rectangle1" fill="#FFFFFF" x="0" y="0" width="97" height="89"></rect>
+                    <path d="M27,44.5 C27,33.1785333 36.1785333,24 47.5,24 C58.8214667,24 68,33.1785333 68,44.5 C68,55.8214667 58.8214667,65 47.5,65 C36.1785333,65 27,55.8214667 27,44.5 Z" id="Shape-5" fill="#FF743C" fill-rule="nonzero"></path>
+                    <path d="M34,611 L101.656231,611 C139.401128,611 170,641.44496 170,679 L102.343769,679 C64.5975055,679 34,648.55504 34,611 Z" id="lfg" fill="#6ED47C" fill-rule="nonzero"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

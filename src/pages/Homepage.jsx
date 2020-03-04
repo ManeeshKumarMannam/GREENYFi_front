@@ -23,11 +23,10 @@ import sliderimg6 from '../assets/images/muzica.png'
 import user1 from '../assets/images/user-1.png'
 import user2 from '../assets/images/user-2.png'
 
-
-
-
 import Thur from '../assets/images/Thur.svg'
 import Thur2 from '../assets/images/Thur-2.svg'
+import Thur3 from '../assets/images/Thur-3.svg'
+import Thur4 from '../assets/images/Thur-4.svg'
 import { Button } from 'react-bootstrap';
 
 
@@ -103,7 +102,7 @@ class HomePage extends Component {
                 margin: 0,
                 nav:false,
                 dots:false,
-                autoplay:true,
+                // autoplay:true,
                 responsive:{
                     0: {
                         items: 1,
@@ -116,6 +115,7 @@ class HomePage extends Component {
     }
     logout = () => {
         this.props.history.push('/')
+        document.body.classList.add('modal-open');
     }
     handleChange = (e) => {
         axios({
@@ -145,6 +145,13 @@ class HomePage extends Component {
         });
 
     }
+    changeme = (e) => {
+        if (e.item && e.item.index === 3) {
+            document.body.classList.add('planet-theme')
+        } else {
+            document.body.classList.remove('planet-theme');
+        }
+    }
     render() {
         let { searchResult, name, dia, climate, population, orbital_period, rotaion } = this.state
         return (
@@ -153,14 +160,16 @@ class HomePage extends Component {
 
                 <div className="banner-slider">
                     <OwlCarousel className="owl-theme" 
-                        loop
+                        loop={true}
                         margin={10}
                         nav
                         items= {1}
+                        onChanged={(e) => this.changeme(e) }
 
                         {...this.state.options4}
                     >
                         <div className="banner">
+                          
                             <div className="container">
                                 <h2 className="banner-semi-text">Animals are seriously dying</h2>
                                 <h1 className="banner-text">Save the world</h1>                        
@@ -990,17 +999,31 @@ class HomePage extends Component {
                 <ParallaxProvider>
                 <section className="countries-block">
                     <div className="vector">
-                        <Parallax className="custom-class" y={[120 + 'px', 0 + 'px']} tagOuter="div">
+                        <Parallax className="custom-class animal-part" y={[120 + 'px', 0 + 'px']} tagOuter="div">
                             <div className="countries-vector">                            
                                 <div className="vector-1">
                                     <img src={Thur} alt="Mirror Edge"/>                                     
                                 </div>                        
                             </div>
                         </Parallax>
-                        <Parallax className="custom-class" y={[50 + 'px', 0 + 'px']} tagOuter="div">
+                        <Parallax className="custom-class animal-part" y={[50 + 'px', 0 + 'px']} tagOuter="div">
                             <div className="countries-vector">                            
                                 <div className="vector-2">
                                     <img src={Thur2} alt="Mirror Edge"/>                                     
+                                </div>                        
+                            </div>
+                        </Parallax>
+                        <Parallax className="custom-class planet-part" y={[80 + 'px', 0 + 'px']} tagOuter="div">
+                            <div className="countries-vector">                            
+                                <div className="vector-1">
+                                    <img src={Thur3} alt="Mirror Edge"/>                                     
+                                </div>                        
+                            </div>
+                        </Parallax>
+                        <Parallax className="custom-class planet-part" y={[50 + 'px', 0 + 'px']} tagOuter="div">
+                            <div className="countries-vector">                            
+                                <div className="vector-2">
+                                    <img src={Thur4} alt="Mirror Edge"/>                                     
                                 </div>                        
                             </div>
                         </Parallax>
