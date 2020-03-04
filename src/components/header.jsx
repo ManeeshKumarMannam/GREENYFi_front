@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import { withRouter, Link, NavLink } from "react-router-dom";
 import { Navbar, Nav, Form ,Button} from "react-bootstrap";
-import logo from '../assets/images/logo.svg'
+import logo from '../assets/images/logo.svg';
+import logo2 from '../assets/images/logo-planet.svg'
+
 
 const Header = (props) => {
 
@@ -11,7 +13,8 @@ const Header = (props) => {
                 <div className="container">
                     <Navbar expand="lg">
                         <Navbar.Brand href="#home">
-                            <img src={logo} alt="greenyfi" title="greenyfi"/>
+                            <img src={logo} alt="greenyfi" title="greenyfi" className="logo-animal"/>
+                            <img src={logo2} alt="greenyfi" title="greenyfi" className="logo-planet"/>
                         </Navbar.Brand>
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
                         <Navbar.Collapse id="basic-navbar-nav">

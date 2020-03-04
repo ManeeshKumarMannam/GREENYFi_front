@@ -3,7 +3,7 @@ import { Provider } from 'react-redux';
 import { store, persistor } from '../src/redux/store';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Login from '../src/pages/login'
-import HomePage from '../src/pages/homePage'
+import HomePage from '../src/pages/Homepage'
 import Register from '../src/pages/register'
 import ForgotPwd from '../src/pages/forgotPassword'
 import ChangePwd from '../src/pages/changePassword'
