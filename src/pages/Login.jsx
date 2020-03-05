@@ -1,7 +1,13 @@
 import React, { Component } from 'react';
 import axios from 'axios'
+import { withRouter, Link, NavLink } from "react-router-dom";
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+
+import Header from '../components/header'
+import Footer from '../components/footer'
+import { Button } from 'react-bootstrap';
+import Linth from '../assets/images/Linth.svg'
 toast.configure()
 class Login extends Component {
     constructor(props) {
@@ -71,20 +77,49 @@ class Login extends Component {
     render() {
         let { userName, password, errors } = this.state
         return (
-            <div className="modal-content animate">
-                <div className="container">
-                    <label><b>User Name</b></label>
-                    <div>
-                        <input type="text" placeholder="Enter Username" name="userName" value={userName} onChange={this.handleChange} />
-                        <span className='err-msg'>{errors.userName}</span>
-                    </div>
-                    <label ><b>Password</b></label>
-                    <input type="password" placeholder="Enter Password" name="password" value={password} onChange={this.handleChange} />
-                    <span className='err-msg'>{errors.password}</span>
+            <React.Fragment>
+                <Header></Header>
+                {/* <div className="login-outer">
+                    <div className="container">
+                        <label><b>User Name</b></label>
+                        <div>
+                            <input type="text" placeholder="Enter Username" name="userName" value={userName} onChange={this.handleChange} />
+                            <span className='err-msg'>{errors.userName}</span>
+                        </div>
+                        <label ><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="password" value={password} onChange={this.handleChange} />
+                        <span className='err-msg'>{errors.password}</span>
 
-                    <button type="button" onClick={() => this.login()}>Login</button>
+                        <button type="button" onClick={() => this.login()}>Login</button>
+                    </div>
+                </div> */}
+                <div className="login-wrapper">
+                    <div className="container">
+                        <div className="login-box">
+                            <h3>Login</h3>
+                            <div className="form-group">
+                                <label>Email Address</label>
+                                <input type="text" className="form-control" name="userName" value={userName} onChange={this.handleChange}/>
+                                <span className='err-msg'>{errors.userName}</span>
+                            </div>
+                            <div className="form-group">
+                                <label>Email Address</label>
+                                <input type="password" className="form-control" name="password" value={password} onChange={this.handleChange}/>
+                                <span className='err-msg'>{errors.password}</span>
+                            </div>
+                            <div className="form-group">
+                                <Link className="forgot-link" to="#">Forgot password?</Link>
+                            </div>
+                            <Button className="btn-block btn-lg">Login</Button>
+                        </div>
+                    </div>
+                    
+                    <div className="login-img">
+                        <img src={Linth} alt="greenyfi" title="greenyfi"/>
+                    </div>
                 </div>
-            </div>
+                <Footer></Footer>
+            </React.Fragment>
         );
     }
 }

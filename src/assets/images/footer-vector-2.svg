@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="111px" height="111px" viewBox="0 0 111 111" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>foot</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Login" transform="translate(-1750.000000, -833.000000)">
+            <g id="foot" transform="translate(1750.000000, 833.000000)">
+                <path d="M111,0 C111,30.927946 85.927946,56 55,56 C55,25.072054 80.072054,0 111,0 Z M56,56 C25.072054,56 0,30.927946 0,0 C30.927946,0 56,25.072054 56,56 Z" id="Shape-Copy-4" fill="#006D4E"></path>
+                <path d="M0,111 C0,80.072054 25.072054,55 56,55 C56,85.927946 30.927946,111 0,111 Z" id="Path" fill="#FFFFFF"></path>
+                <path d="M55,55 C85.927946,55 111,80.072054 111,111 C80.072054,111 55,85.927946 55,55 Z" id="Path" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>

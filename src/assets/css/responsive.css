@@ -9,6 +9,17 @@
     .banner .banner-text {font-size: 7.5rem;}
     
 }
+
+@media only screen and (max-width: 1440px) {
+    
+    /* Common */
+    .container { max-width: 1140px;}
+
+    /* Banner */
+    .banner .banner-semi-text {font-size: 3.5rem;}
+    .banner .banner-text {font-size: 5.5rem;}
+    
+}
 /*Large devices (desktops, less than 1200px)*/
 @media only screen and (max-width: 1199.98px) {
     

@@ -5,7 +5,7 @@ import logo from '../assets/images/logo.svg';
 import logo2 from '../assets/images/logo-planet.svg'
 
 
-const Header = () => {
+const Footer = () => {
 
     return (
         <React.Fragment>
@@ -33,4 +33,4 @@ const Header = () => {
     );
 };
 
-export default withRouter(Header);
+export default withRouter(Footer);
