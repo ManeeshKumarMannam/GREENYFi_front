@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="189px" height="39px" viewBox="0 0 189 39" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="2" transform="translate(-251.000000, -25.000000)">
+            <g id="logo" transform="translate(250.000000, 24.000000)">
+                <text id="GREENY" font-family="PlantagenetCherokee, Plantagenet Cherokee" font-size="36" font-weight="normal" fill="#1DA65A">
+                    <tspan x="0" y="39">GREENY</tspan>
+                </text>
+                <path d="M170.59799,1 L190,1 L190,20.4020101 C190,31.225681 181.225681,40 170.40201,40 L151,40 L151,20.5979899 C151,9.77431897 159.774319,1 170.59799,1 Z" id="Shape" fill="#006D4E" fill-rule="nonzero"></path>
+                <text id="5" font-family="Kefa-Regular, Kefa" font-size="37" font-weight="normal" fill="#FFFFFF">
+                    <tspan x="159" y="34">5</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>
